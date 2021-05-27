@@ -211,8 +211,6 @@ input[type="number"] {
   position: relative;
 }
 
-.about-parallax {
-}
 
 .about-parallax > div:nth-child(1) {
   left: 15% !important;
@@ -242,6 +240,12 @@ input[type="number"] {
   bottom: initial !important;
   width: 200px;
   height: 200px;
+}
+.about-parallax > div:nth-child(5) {
+  left: 10% !important;
+  right: initial !important;
+  top: initial !important;
+  bottom: -44vh !important;
 }
 .about-parallax > div:nth-child(4) img {
   position: absolute;
@@ -294,28 +298,33 @@ input[type="number"] {
     transform: translateX(-50%) translateY(-50%) scale(1.2);
   }
 }
-.about-parallax > div:nth-child(4) img:nth-child(1) {
-  animation-duration: 4s;
-  animation-name: firstAbout-sParall;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes firstAbout-sParall { 
-  from {
-    transform: translateX(-50%) translateY(-50%) scale(1.5);
-  }
-  to {
-    transform: translateX(-50%) translateY(-50%) scale(0.9);
-  }
-}
 
 .about-s__first-title,
 .about-s__center-text,
 .about-s__pink-fb,
-.about-s__values {
+.about-s__values,
+.about-s-bottom-contact p {
   position: relative;
   z-index: 2;
+}
+
+.contact-s__intro .container-fluid {
+  position: relative;
+}
+
+.contact-parallax {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-parallax > div {
+  left: initial !important;
+  right: -75% !important;
+  top: 0px !important;
+  bottom: initial !important;
 }
 
 /* media querry */
@@ -327,6 +336,28 @@ input[type="number"] {
 }
 
 @media (max-width: 1199.8px) {
+  .about-parallax > div:nth-child(3) img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+
+  .about-parallax > div,
+  .contact-parallax > div img  {
+    animation-duration: 14s;
+    animation-name: mobileAnimForParall;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes mobileAnimForParall {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
   #map {
     height: 500px;
   }
@@ -408,6 +439,40 @@ input[type="number"] {
 }
 
 @media (max-width: 767.8px) {
+  @keyframes threeAbout-sParall {
+    from {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg) scale(0.5);
+    }
+    to {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg) scale(0.5);
+    }
+  }
+
+  @keyframes fourAbout-sParall {
+    from {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg) scale(0.5);
+    }
+    to {
+      transform: translateX(-50%) translateY(-50%) rotate(-360deg) scale(0.5);
+    }
+  }
+
+  @keyframes twoAbout-sParall {
+    from {
+      transform: translateX(-50%) translateY(-50%) scale(0.35);
+    }
+    to {
+      transform: translateX(-50%) translateY(-50%) scale(0.5);
+    }
+  }
+
+  .about-parallax > div:nth-child(4) {
+    right: 5% !important;
+    width: 100px;
+    height: 100px;
+    top: 0 !important;
+  }
+
   .about-s__values-main-title {
     font-size: 24px;
   }
