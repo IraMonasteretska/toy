@@ -5,6 +5,9 @@
 .contact-s-main {
   overflow: hidden;
 }
+.contact-s__intro {
+  overflow: hidden;
+}
 .contact-s__map-wrapper {
   /* background: #FDBEDB; */
   margin-top: 0px;
