@@ -75,7 +75,7 @@
         padding-left: 24px;
     }
 
-    a.blackbtn {
+    .blackbtn {
         height: 60px;
         font-size: 16px;
     }
@@ -263,18 +263,105 @@
         bottom: -50px !important;
     }
 
+    #rewiew .modal-dialog {
+        max-width: 700px;
+    }
 
+    .rewiew-content {
+        padding: 40px 0;
+    }
 
+    .rewiew-content .title {
+        padding: 0 50px;
+        font-size: 28px;
+        line-height: normal;
+        margin-bottom: 30px;
+    }
 
+    .rewiew-content .inputrow {
+        padding: 0 50px 20px 50px;
+    }
 
+    .rewiew-content .ratebtn {
+        padding: 20px 50px;
+    }
 
+    .rewiew-content .inputrow textarea {
+        height: 100px;
+        padding: 10px 15px;
+        margin: 20px 0 10px 0;
+    }
 
+    .rewiew-content .rewiew__submit {
+        height: 60px;
+        width: 250px;
+    }
 
+    .textpage {
+        padding-top: 50px;
+    }
 
+    .textpage h1 {
+        font-size: 52px;
+        margin-bottom: 60px;
+    }
 
+    .textpage .description {
+        margin-bottom: 60px;
+    }
 
+    .textpage .termsperl1 {
+        width: 100px;
+        top: 2%;
+        right: 20%;
+    }
 
+    .textpage .termsperl2 {
+        width: 60px;
+    }
 
+    .textpage h2 {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+
+    .textpage h3 {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    .termsperl4 {
+        width: 40px;
+    }
+
+    .totop {
+        width: 60px;
+        height: 60px;
+        font-size: 16px;
+        margin-left: 80px;
+    }
+
+    .cookie__content .title {
+        font-size: 28px;
+        max-width: 220px;
+    }
+
+    .cookie__content .descr {
+        font-size: 14px;
+        /* max-width: 500px; */
+        line-height: 140%;
+        padding-right: 50px;
+    }
+
+    .cookie__content .descr {
+        max-width: calc(100% - 520px);
+    }
+
+    .cookie__content a {
+        height: 60px;
+        font-size: 16px;
+        width: 255px;
+    }
 
 
 
@@ -382,6 +469,17 @@
         margin-top: 10px;
         font-size: 14px;
     }
+
+    .cookie__content a {
+        width: 230px;
+    }
+
+    .cookie__content .descr {
+        width: calc(100% - 450px);
+    }
+
+
+
 
 
 }
@@ -585,12 +683,61 @@
         min-height: calc(100vh - 80px);
     }
 
+    #rewiew .modal-dialog {
+        max-width: 550px;
+    }
 
+    .rewiew-content .title {
+        font-size: 26px;
+        padding: 0 40px;
+        margin-bottom: 20px;
+    }
 
+    .textpage h1 {
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
 
+    .textpage {
+        padding-top: 20px;
+    }
 
+    .textpage .description {
+        margin-bottom: 40px;
+    }
 
+    .textpage h3 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
 
+    .textpage h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .totop {
+        margin-left: 40px;
+    }
+
+    .cookie__content {
+        flex-wrap: wrap;
+    }
+
+    .cookie__content .title {
+        max-width: 100%;
+        padding-right: 50px;
+    }
+
+    .cookie__content .descr {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cookie {
+        padding: 20px 0;
+    }
 
 
 
@@ -863,7 +1010,7 @@
         margin-bottom: 30px;
     }
 
-    a.blackbtn {
+    .blackbtn {
         height: 52px;
         margin-top: 20px;
     }
@@ -1040,7 +1187,129 @@
         width: 100%;
     }
 
+    .rewiew-content {
+        padding: 30px 0;
+    }
 
+    .rewiew-content .title {
+        font-size: 22px;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+
+    .rewiew-content .inputrow {
+        padding: 0 20px 20px 20px;
+    }
+
+    .rewiew-content .inputrow {
+        flex-wrap: wrap;
+    }
+
+    .rewiew-content .inputrow input {
+        max-width: 100%;
+    }
+
+    .rewiew-content .inputrow input:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .rewiew-content .ratebtn {
+        padding: 20px;
+    }
+
+    .rewiew-content .ratebtn p {
+        margin-bottom: 10px;
+    }
+
+    .rewiew-content .rewiew__submit {
+        max-width: 200px;
+        height: 52px;
+        border-width: 1px;
+        font-size: 16px;
+    }
+
+    .rewiew-content .inputrow textarea,
+    .rewiew-content .inputrow input {
+        border-width: 1px;
+    }
+
+    .rewiew-content .inputrow textarea {
+        margin-bottom: 0;
+    }
+
+    .errorpagecontent .subtitle,
+    .errorpagecontent .title,
+    .errorpagecontent .descr {
+        padding-left: 0;
+    }
+
+    .errorpagecontent a {
+        margin-left: 0;
+    }
+
+    .textpage h1 {
+        padding-left: 0;
+    }
+
+    .textpage .subtitle {
+        font-size: 12px;
+    }
+
+    .textpage h1 {
+        font-size: 34px;
+        margin-bottom: 30px;
+        line-height: normal;
+    }
+
+    .textpage h2 {
+        font-size: 28px;
+    }
+
+    .textpage h3 {
+        font-size: 24px;
+    }
+
+    .textpage .description {
+        margin-bottom: 30px;
+    }
+
+    .textpage .termsperl1 {
+        right: 5%;
+    }
+
+    .termsperl4 {
+        display: none;
+    }
+
+    .textpage .description p {
+        font-size: 14px;
+    }
+
+    .white-footer.pink .white-footer__content {
+        justify-content: space-between;
+    }
+
+    .totop {
+        margin-left: 20px;
+    }
+
+    .cookie__content .title {
+        font-size: 22px;
+    }
+
+    .cookie__content .descr p {
+        font-size: 14px;
+    }
+
+    .cookie__content a {
+        height: 52px;
+        width: 200px;
+        font-size: 14px;
+    }
+
+    .cookie__content .descr {
+        margin-bottom: 10px;
+    }
 
 
 
