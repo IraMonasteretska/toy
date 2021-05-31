@@ -405,12 +405,17 @@ img
             font-size: 14px
             line-height: 160%
             color: #2C2C2C
+            max-width: 417px
+            padding-left: 15px
+
             @media (max-width:1024.8px)
                 position: static
                 opacity: 1
                 visibility: visible
             @media (max-width:575.8px)
                 text-align: center
+                padding-left: 0
+
 
 
     @keyframes errrotate 
@@ -774,11 +779,16 @@ img
 .reviews
     // display: none
     overflow: hidden
-    margin-bottom: 141px
+    margin-bottom: 70px
     position: relative
+    padding-bottom: 70px
+    @media (max-width: 1400.8px)
+        margin-bottom: 30px
     @media (max-width:1199.8px) 
-        background: #EAA8C6  
+        background: #FDBEDB  
         margin-bottom: 120px
+        padding-bottom: 0px
+
 
     @media (max-width:575.8px)
         margin-bottom: 90px
@@ -795,7 +805,7 @@ img
             left: initial !important
             top: initial !important
             right: 305px !important
-            bottom: -25px !important
+            bottom: 35px !important
             z-index: -1
             @media (max-width:575.8px)
                 right: 0 !important
@@ -833,6 +843,7 @@ img
             padding-left: 0
 
     &__title
+        font-family: 'Playfair Display', serif
         font-style: normal
         font-weight: bold
         font-size: 38px
@@ -854,6 +865,7 @@ img
         line-height: 160%
         color: #5E5E5E
         margin-bottom: 116px
+        max-width: 440px
         @media (max-width:1199.8px) 
             margin-bottom: 120px
         @media (max-width:991.8px)
@@ -864,7 +876,7 @@ img
     &__wrapper
         padding-top: 126px
         padding-bottom: 97px
-        background: #EAA8C6  
+        background: #FDBEDB  
         @media (max-width:1199.8px) 
             padding: 80px 0
 
@@ -947,11 +959,14 @@ img
                 color: #FFFFFF
                 margin-right: 53px
                 cursor: pointer
+                opacity: 0.6
+                transition: .3s
                 @media (max-width:575.8px)
                     font-size: 18px
                     margin-right: 0
                     margin-left: 40px
-
+                &:hover
+                    opacity: 1
     .reviews-item
         background: #fff
         // background: #dfdfdf
@@ -1026,7 +1041,7 @@ img
 .pink-footer
     position: relative
     @media (max-width:1199.8px)
-        background: #EAA8C6
+        background: #FDBEDB
 
     .footer-parallax
         position: absolute
@@ -1048,7 +1063,7 @@ img
                 bottom: 70px !important
                 left: 50px !important
     .pink-footer__content
-        background: #EAA8C6
+        background: #FDBEDB
         display: flex
         justify-content: flex-end
         align-items: center
@@ -1092,6 +1107,8 @@ img
 
 .contactsection_main
     margin-bottom: 144px
+    @media (max-width: 1400.8px)
+        margin-bottom: 100px
     @media (max-width:1199.8px) 
         margin-bottom: 120px
     @media (max-width:575.8px)
@@ -1219,7 +1236,7 @@ img
         &__img
             padding: 5px
             border: 1px solid #EDF1F4
-            border: 1px solid #141414
+            // border: 1px solid #141414
             img 
                 height: 100%
                 object-fit: cover
@@ -1314,8 +1331,14 @@ img
                 max-width: 100%
                 margin-right: 0
 
-            img 
+            img, svg
                 margin-right: 13px
+                path
+                    transition: 0.3s
+            &:hover
+                svg 
+                    path
+                        fill: #2C2C2C
     &__rev
         display: flex
         align-items: center
@@ -1419,7 +1442,7 @@ img
             color: #5E5E5E
             min-width: 350px
             @media (max-width: 991.8px)
-                min-width: none
+                min-width: 0
                 margin-bottom: 25px
 
 
