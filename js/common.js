@@ -106,7 +106,7 @@ $(document).ready(function () {
         if ($reviewsSlider.length) {
 
             $reviewsSlider.slick({
-                infinite: true,
+                infinite: false,
                 autoplaySpeed: 5000,
                 // autoplay: true,
                 slidesToShow: 2,

@@ -959,7 +959,7 @@ img
                 color: #FFFFFF
                 margin-right: 53px
                 cursor: pointer
-                opacity: 0.6
+                // opacity: 0.6
                 transition: .3s
                 @media (max-width:575.8px)
                     font-size: 18px
@@ -967,6 +967,12 @@ img
                     margin-left: 40px
                 &:hover
                     opacity: 1
+                    color: #2C2C2C
+                &.slick-disabled
+                    opacity: 0.6
+
+                    &:hover
+                        color: #fff
     .reviews-item
         background: #fff
         // background: #dfdfdf
@@ -1095,6 +1101,7 @@ img
         color: #2C2C2C
         margin-left: 118px
         cursor: pointer
+        transition: 0.3s
         @media (max-width: 991.8px)
             width: 50px
             height: 50px
@@ -1104,6 +1111,10 @@ img
             width: 40px
             height: 40px
             font-size: 14px
+
+        &:hover
+            background: #2C2C2c
+            color: #fff
 
 .contactsection_main
     margin-bottom: 144px
@@ -1229,6 +1240,8 @@ img
         margin: 0 -10px
         .slick-slide
             margin: 0 10px
+        .slick-list
+            padding-bottom: 10px
     .slider-nav-item
         cursor: pointer
         
@@ -1244,6 +1257,25 @@ img
                 opacity: 0.5
     .slick-current
         .slider-nav-item__img
+            // position: relative
+            &::after
+                // opacity: 0
+                content: ''
+                display: inline-block
+                height: 5px
+                width: 100%
+                position: absolute
+                left: 0px
+                right: 0
+                bottom: -12px
+                background-image: url(../img/icon/active-sl.svg)
+                background-repeat: no-repeat
+                background-position: left center
+                transition: .3s
+                -webkit-transition: .3s
+                -moz-transition: .3s
+                -ms-transition: .3s
+                -o-transition: .3s
             img
                 opacity: 1
 
